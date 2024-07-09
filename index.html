@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Working with a Rick and Morty API to bring you facts about your favorite characters, places and events."
+    />
+    <link rel="icon" href="img/smallfavicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <!-- <link rel="manifest" href="manifest.webmanifest" /> -->
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Rick and Morty</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" alt="Retro Kevin logo" src="img/Logo.png" />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="https://www.retrokevin.net"
+              >Retro Kevin Home Page</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#">Random characters</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Search by name</a>
+          </li>
+          <li><a class="main-nav-link" href="#">Search by location</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-img-box">
+            <img
+              src="img/ricknmortylogo.png"
+              class="hero-img"
+              alt="The Rick and
+            Morty TV show logo"
+            />
+          </div>
+          <div class="hero-txt-box">
+            <h1 class="hero-txt">
+              Everything you need to know about over 800 Rick and Morty
+              Characters
+            </h1>
+          </div>
+        </div>
+      </section>
+      <section class="section-main">
+        <div class="character-sheet"></div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <p>Thanks to rickandmortyapi.com for the great API</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

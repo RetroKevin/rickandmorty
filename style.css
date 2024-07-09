@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cceff4;
+
+  /* To make the header sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 5.4rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #2e4833;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #015964;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #014750;
+}
+
+/* Mobile */
+
+.btn-mobile-nav {
+  display: none;
+  border: none;
+  background-color: #e6f7fa;
+  cursor: pointer;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #001214;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+/* Sticky */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1.2rem 3.2rem rgb(0, 0, 0, 0.01);
+}
+
+.sticky .nav-open .main-nav {
+  height: 50rem;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+.section-hero {
+  background-color: #cceff4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-txt-box {
+  display: grid;
+  justify-content: center;
+}
+
+.section-main {
+  background-color: #002328;
+  color: #eee;
+}
+
+.character-sheet {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #015964;
+}
+
+.char-box {
+  border-radius: 9px;
+  margin: 3.2rem;
+  background-color: #cceff4;
+}
+
+.char-img {
+  margin-top: 3.2rem;
+  width: 100%;
+}
+
+.char-data {
+  background-color: #e6f7fa;
+  color: #001214;
+  margin-bottom: 3.2rem;
+}
